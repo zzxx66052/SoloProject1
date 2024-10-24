@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search movie</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <header>
+        <h1>영화 검색 사이트</h1>
+        <div>
+            <input type="text" id="searchMovie" placeholder="영화를 검색하세요...">
+            <button id="searchBtn">Search</button>
+        </div>
+        <button id="showBook">북마크 보기</button>
+    </header>
+
+    <section id="movieList">
+        <div class="movieCard">
+            <h3 class="movieRanking">인기 영화 순위</h3>
+            <!-- <img src="" alt="">
+            <h3>영화제목</h3>
+            <P>평점 : </P> -->
+        </div>
+    </section>
+
+    <div id="modal">
+        <div class="modalMain">
+            <span class="close">X</span>
+            <img id="modalImg" src="#" alt="">
+            <h3 id="movieTitle"></h3>
+            <p id="movieContent">내용</p>
+
+            <p><strong>개봉일 : </strong><span id="modalDate"></span></p>
+            <p><strong>평점 : </strong><span id="modalRating"></span></p>
+
+            <button id="bookMarkbtn">북마크추가</button>
+            <button id="removebookMarkbtn">북마크삭제</button>
+        </div>
+    </div>
+
+    <script src="./js/api.js"></script>
+</body>
+</html>
